@@ -5,7 +5,7 @@
  * @args: Arguments passed from cmdline broken up
  * Return: 1 if user entered a path/builtin, 2 if user entered a binary
  */
-int bridge(char *checker, char **args)
+int connect(char *checker, char **args)
 {
 	int i = 0;
 
