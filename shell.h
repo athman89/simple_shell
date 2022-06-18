@@ -31,7 +31,7 @@ char *cur_dir(char *filename, char *er);
 int connect(char *check, char **args);
 void prompt(void);
 int builtins_checker(char **args);
-char *save_path(char *tmp, char *path)
+char *save_path(char *tmp, char *path);
 char *read_dir(char *er, struct dirent *s, char *fi, int l, char *p, char *t);
 char *_envget(char *env);
 char *_strstr(char *haystack, char *needle);

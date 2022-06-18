@@ -7,7 +7,7 @@
  */
 int bridge(char *checker, char **args)
 {
-	ini = 0;
+	int i = 0;
 
 	if (builtins_checker(args) == 1)
 		return (1);

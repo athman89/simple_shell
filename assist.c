@@ -56,8 +56,8 @@ char **split_line(char *line)
 int check_for_builtins(char **args, char *line, char **env)
 {
 	builtins_t list[] = {
-		{"exit", exit_shell},
-		{"env", env_shell},
+		{"exit", shell_exit},
+		{"env", shell_env},
 		{NULL, NULL}
 	};
 	int i;
@@ -114,8 +114,8 @@ int builtins_checker(char **args)
 {
 	int i;
 	builtins_t list[] = {
-		{"exit", exit_shell},
-		{"env", env_shell},
+		{"exit", shell_exit},
+		{"env", shell_env},
 		{NULL, NULL}
 	};
 
