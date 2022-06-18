@@ -2,6 +2,7 @@
 /**
  * cur_dir - look for current working dir
  * @filename: file name
+ * @er: input characters
  * Return: current working dir
  */
 char *cur_dir(char *filename, char *er)
@@ -33,9 +34,13 @@ char *cur_dir(char *filename, char *er)
 				strcat(ret, filename);
 				closedir(dir);
 				if (!(access(ret, X_OK)))
+				{
 					return (ret);
+				}
 				else
+				{
 					write(2, er, 5);
+				}
 			}
 		}
 	}
